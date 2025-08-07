@@ -1,7 +1,8 @@
 # Ejercicio variables4.rs
 
 El script intenta declarar una variable `x` con el valor `3`, para luego
-mostrar en consola, despues reasigna el valor a `5`, y, finalmente luego volver a imprimirla en pantalla. Sin embargo,el script contiene un error de compilación.
+mostrar en consola, despues reasigna el valor a `5`, y, finalmente luego volver a
+imprimirla en pantalla. Sin embargo,el script contiene un error de compilación.
 
 ## Desglose Paso a Paso
 
