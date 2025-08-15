@@ -15,7 +15,7 @@ para evaluar el tipo de carácter.
    y `is_numeric()` para determinar si `my_first_initial` es alfabético o numérico,
    e imprime el resultado correspondiente.
 3. **Declaración de `your_character`**: Se pide al usuario declarar una variable
-   `your_character` con su carácter favorito y repetir el proceso de verificación del
-   tipo de carácter.
+   `your_character` con su carácter favorito y repetir el proceso de verificación
+   del tipo de carácter.
 4. **Evaluación y impresión**: Dependiendo del tipo de `your_character`, se imprime
    si es alfabético, numérico o ninguno de los dos.
