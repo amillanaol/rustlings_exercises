@@ -1,6 +1,6 @@
-// TODO: Fix the compiler error in this function.
+// FIXED: Fix the compiler error in this function.
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let vec = vec;
+    let mut vec = vec;
 
     vec.push(88);
 
@@ -9,6 +9,14 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 
 fn main() {
     // You can optionally experiment here.
+
+    // Creamos un vector inicial
+    let mi_vector = vec![22, 44, 66];
+    println!("Vector original: {:?}", mi_vector);
+
+    // Llamamos a la función fill_vec (recuerda que necesitas arreglar el error primero)
+    let resultado = fill_vec(mi_vector);
+    println!("Vector después de fill_vec: {:?}", resultado);
 }
 
 #[cfg(test)]
