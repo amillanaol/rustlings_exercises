@@ -8,6 +8,15 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 
 fn main() {
     // You can optionally experiment here.
+
+    let vec0 = vec![22, 44, 66];
+    println!("Vector original: {:?}", vec0);
+
+    // Pasamos una referencia (prestamos)
+    let vec1 = fill_vec(vec0.clone());
+
+    println!("Vector original después: {:?}", vec0);
+    println!("Vector modificado: {:?}", vec1);
 }
 
 #[cfg(test)]
@@ -20,7 +29,7 @@ mod tests {
     fn move_semantics2() {
         let vec0 = vec![22, 44, 66];
 
-        let vec1 = fill_vec(vec0);
+        let vec1 = fill_vec(vec0.clone());
 
         assert_eq!(vec0, [22, 44, 66]);
         assert_eq!(vec1, [22, 44, 66, 88]);
