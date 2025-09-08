@@ -13,7 +13,7 @@ Este script de Rust es un ejercicio de práctica que contiene errores deliberado
 
 // Shouldn't take ownership
 fn get_char(data: String) -> char {
-    data.chars().last().unwrap()JJJKj  // ❌ Toma ownership + caracteres basura
+    data.chars().last().unwrap();
 }
 
 // Should take ownership
