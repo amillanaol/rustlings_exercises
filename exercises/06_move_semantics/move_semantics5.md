@@ -2,7 +2,11 @@
 
 ## Descripción
 
-Este script de Rust es un ejercicio de práctica que contiene errores deliberados relacionados con el sistema de ownership (propiedad) y borrowing (préstamo) de referencias. El código incluye dos funciones: una que obtiene el último carácter de un string y otra que imprime un string en mayúsculas. Sin embargo, tiene varios problemas de compilación que necesitan ser corregidos usando únicamente referencias (`&`).
+Este script de Rust es un ejercicio de práctica que contiene errores deliberados
+relacionados con el sistema de ownership (propiedad) y borrowing (préstamo) de referencias.
+El código incluye dos funciones: una que obtiene el último carácter de un string
+y otra que imprime un string en mayúsculas. Sin embargo, tiene varios problemas de
+compilación que necesitan ser corregidos usando únicamente referencias (`&`).
 
 ## Desglose paso a paso
 
@@ -17,7 +21,8 @@ fn get_char(data: String) -> char {
 }
 
 // Should take ownership
-fn string_uppercase(mut data: &String) {  // ❌ Recibe referencia pero debería tomar ownership
+fn string_uppercase(mut data: &String) {  // ❌ Recibe referencia pero debería tomar
+ownership
     data = data.to_uppercase();  // ❌ No se puede reasignar una referencia
     println!("{data}");
 }
@@ -45,4 +50,3 @@ fn main() {
 **Función `main`:**
 
 - Después de llamar `get_char(data)`, la variable `data` ya no existe
-
