@@ -1,5 +1,5 @@
 // TODO: Fix the compiler error in the function without adding any new line.
-fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
     vec.push(88);
 
     vec
@@ -7,6 +7,17 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 
 fn main() {
     // You can optionally experiment here.
+    let mi_vector = vec![10, 20, 30];
+    println!("Vector original: {:?}", mi_vector);
+
+    let vector_modificado = fill_vec(mi_vector);
+    println!("Vector con 88 añadido: {:?}", vector_modificado);
+
+    // Otro ejemplo
+    let numeros = vec![1, 2, 3, 4, 5];
+    let resultado = fill_vec(numeros);
+    println!("Resultado: {:?}", resultado);
+
 }
 
 #[cfg(test)]
